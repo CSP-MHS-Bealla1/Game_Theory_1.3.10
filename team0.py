@@ -7,11 +7,14 @@
 ####
 
 team_name = 'FrtNteRulz' # Only 10 chars displayed.
-strategy_name = 'Collude until partner betrays. Then we betray.'
-strategy_description = 'We will have variables that are betray and collude. We will then have if statements deciding to collude or betray.'
+strategy_name = 'Pacifist-ish'
+strategy_description = 'We will have variables that are betray and collude. We will then have if statements deciding to collude or betray. We will collude until the opponent betrays.'
     
 def move(my_history, their_history, my_score, their_score):
-    
+    if (my_score <= -250):
+        return 'b'
+    else:
+        return 'c'
     return 'c'
 
     
