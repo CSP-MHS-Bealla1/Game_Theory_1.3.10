@@ -7,8 +7,10 @@
 ####
 
 team_name = 'FriedChicken' # Only 10 chars displayed.
-strategy_name = 'The name the team gives to this strategy'
-strategy_description = 'How does this strategy decide?'
+strategy_name = 'The FrenchFries Plan'
+strategy_description = '''If we start with 'b' then we will choose 'c'. If our score is >= their 
+score, we will choose 'b'when our score is < thier score, We will also choose 'b' if their last 
+move was 'b'. If their last move was 'c' then we choose 'c' '''
     
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
