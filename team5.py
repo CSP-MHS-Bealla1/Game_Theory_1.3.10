@@ -20,9 +20,13 @@ def move(my_history, their_history, my_score, their_score):
     if len(my_history) == 0:
         return 'c'
     
+    if my_score >= 0:
+        return 'c'
+        
+    
+        
     
     
-    return 'c'
 
     
 def test_move(my_history, their_history, my_score, their_score, result):
