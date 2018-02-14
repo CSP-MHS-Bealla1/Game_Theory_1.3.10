@@ -8,7 +8,7 @@
 
 team_name = 'FreedomBoys' # Only 10 chars displayed.
 strategy_name = 'Ultimate Strategy'
-strategy_description = 'How does this strategy decide?'
+strategy_description = 'a balanced strategy that tries to betray as little as possible'
     
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
@@ -17,6 +17,7 @@ def move(my_history, their_history, my_score, their_score):
     Make my move.
     Returns 'c' or 'b'. 
     '''
+    
     if len(my_history) == 0:
         return 'c'
     if my_score >= 0:
