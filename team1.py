@@ -8,7 +8,7 @@
 
 team_name = 'Comeback Kids' # Only 10 chars displayed.
 strategy_name = 'The comeback'
-strategy_description = 'when they betray, we betray'
+strategy_description = 'if our score goes below -100, we will betray, if not collude'
     
 def move(my_history, their_history, my_score, their_score):
     if my_score<='-100':
