@@ -11,7 +11,7 @@ strategy_name = 'The comeback'
 strategy_description = 'when they betray, we betray'
     
 def move(my_history, their_history, my_score, their_score):
-    if their_history=='b':
+    if my_score<='-100':
         return'b'
     else:
         return'c'
@@ -41,7 +41,7 @@ if __name__ == '__main__':
               their_history='', 
               my_score=0,
               their_score=0,
-              result='c'):
+              result='b'):
          print ('Test passed')
      # Test 2: Continue betraying if they collude despite being betrayed.
     test_move(my_history='bbb',
@@ -54,4 +54,4 @@ if __name__ == '__main__':
               # move('bbb', 'ccc', 0, 0) returns 'b'.
               my_score=0, 
               their_score=0,
-              result='c')             
+              result='b')             
