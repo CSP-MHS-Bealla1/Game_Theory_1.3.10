@@ -14,6 +14,20 @@ def move(my_history, their_history, my_score, their_score):
         return random.choice (['c','b'])
     if their_score == my_score:
         return random.choice (['c','b'])
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 21d7074645a973351baf2fa782b5d02f3eb4b0e4
 
 
   
@@ -25,6 +39,7 @@ def move(my_history, their_history, my_score, their_score):
                   
                     
                         
+
 def test_move(my_history, their_history, my_score, their_score, result):
     '''calls move(my_history, their_history, my_score, their_score)
     from this module. Prints error if return value != result.
