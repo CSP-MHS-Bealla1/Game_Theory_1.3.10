@@ -6,15 +6,10 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
-<<<<<<< HEAD
-team_name = 'FreedomBoys' # Only 10 chars displayed.
-strategy_name = 'The name the team gives to this strategy'
-strategy_description = 'How does this strategy decide?'
-=======
 team_name = 'WeDemBoyos' # Only 10 chars displayed.
 strategy_name = 'Ultimate Strategy'
 strategy_description = 'a balanced strategy that tries to betray as little as possible'
->>>>>>> b9cb2029d0a7eeb6ae42a119926d9a4b748ed40d
+
     
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
