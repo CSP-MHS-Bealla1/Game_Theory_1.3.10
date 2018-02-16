@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
 import random
 
->>>>>>> 444ed593a6e5a2179e10afcc2a300410dc75d440
 
 team_name = 'Bichael' # Only 10 chars displayed.
 strategy_name = 'The best and only strategy'
@@ -12,10 +9,11 @@ def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
     my_score, their_score are ints.
     Make my move.
-<<<<<<< HEAD
-    Returns 'c' or 'b'. 
-    '''
-    
+    Returns 'c' or 'b'.'''
+    if their_score != my_score:
+        return random.choice (['c','b'])
+    if their_score == my_score:
+        return random.choice (['c','b'])
 
 
 
@@ -26,7 +24,7 @@ def move(my_history, their_history, my_score, their_score):
 
 
 
-=======
+
     Returns 'c' or 'b'.'''
     if len(
 
