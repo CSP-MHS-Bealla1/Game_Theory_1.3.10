@@ -6,9 +6,11 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = 'The name the team gives to itself' # Only 10 chars displayed.
-strategy_name = 'The name the team gives to this strategy'
-strategy_description = 'How does this strategy decide?'
+team_name = 'FriedChicken' # Only 10 chars displayed.
+strategy_name = 'The FrenchFries Plan'
+strategy_description = '''If we start with 'b' then we will choose 'c'. If our score is >= their 
+score, we will choose 'b'when our score is < thier score, We will also choose 'b' if their last 
+move was 'b'. If their last move was 'c' then we choose 'c' '''
     
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
@@ -17,6 +19,14 @@ def move(my_history, their_history, my_score, their_score):
     Make my move.
     Returns 'c' or 'b'. 
     '''
+    if my_score >= their_score or their_history[len(their_history)-1] == 'c':
+        if my_score == 0:
+            return 'b'
+        else:
+            return 'c'
+
+        
+     
 
     # my_history: a string with one letter (c or b) per round that has been played with this opponent.
     # their_history: a string of the same length as history, possibly empty. 
