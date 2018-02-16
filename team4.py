@@ -20,10 +20,11 @@ def move(my_history, their_history, my_score, their_score):
     Returns 'c' or 'b'. 
     '''
     if my_score >= their_score or their_history[len(their_history)-1] == 'c':
-        return 'c'
+        if my_score == 0:
+            return 'b'
+        else:
+            return 'c'
 
-    if my_score == 0:
-        return 'b'
         
      
 
