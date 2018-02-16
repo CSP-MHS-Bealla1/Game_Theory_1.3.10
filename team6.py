@@ -10,7 +10,10 @@ def move(my_history, their_history, my_score, their_score):
     my_score, their_score are ints.
     Make my move.
     Returns 'c' or 'b'.'''
-    if len(
+    if their_score != my_score:
+        return random.choice (['c','b'])
+    if their_score == my_score:
+        return random.choice (['c','b'])
 
 
   
