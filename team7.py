@@ -6,6 +6,7 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
+team_name = 'RNGesusPls' # Only 10 chars displayed.
 strategy_name = ''
 strategy_description = ''
     
