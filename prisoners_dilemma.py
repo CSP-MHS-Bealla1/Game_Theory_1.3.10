@@ -39,7 +39,9 @@ import team5, team7
 
 
 
+
 modules = [team0, team1, team2, team7]
+
 for module in modules:
     reload(module)
     print ('reloaded',module)
