@@ -10,27 +10,12 @@ def move(my_history, their_history, my_score, their_score):
     my_score, their_score are ints.
     Make my move.
     Returns 'c' or 'b'.'''
-    if their_score != my_score:
-        return random.choice (['c','b'])
-    if their_score == my_score:
-        return random.choice (['c','b'])
-
-
-
-
-
-
-
-
-
-
-
-    Returns 'c' or 'b'.'''
-    if len(
-
-
-  
     
+    if their_score != my_score:
+        return 'b'
+    if their_score == my_score:
+        return 'c'
+  
 
             
               
@@ -38,7 +23,7 @@ def move(my_history, their_history, my_score, their_score):
                   
                     
                         
->>>>>>> 444ed593a6e5a2179e10afcc2a300410dc75d440
+
 def test_move(my_history, their_history, my_score, their_score, result):
     '''calls move(my_history, their_history, my_score, their_score)
     from this module. Prints error if return value != result.
@@ -62,7 +47,7 @@ if __name__ == '__main__':
               their_history='', 
               my_score=0,
               their_score=0,
-              result='b'):
+              result='c'):
          print 'Test passed'
      # Test 2: Continue betraying if they collude despite being betrayed.
     test_move(my_history='bbb',
@@ -75,4 +60,4 @@ if __name__ == '__main__':
               # move('bbb', 'ccc', 0, 0) returns 'b'.
               my_score=0, 
               their_score=0,
-              result='b')             
+              result='c')             
