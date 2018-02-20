@@ -6,15 +6,16 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = ''
-strategy_name = ''
-strategy_description = ''
+team_name = 'AMX1000'
+strategy_name = 'Neutral'
+strategy_description = 'Can go both ways'
     
 def move(my_history, their_history, my_score, their_score):
-   
+    if their_score > 0:
+        return 'b'
+    else:
+        return 'c'
     
-    return 'c'
-
     
 def test_move(my_history, their_history, my_score, their_score, result):
     '''calls move(my_history, their_history, my_score, their_score)
