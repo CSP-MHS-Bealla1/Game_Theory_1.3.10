@@ -36,7 +36,7 @@ import os.path
 import team0, team1, team2, team3, team4
 import team5, team7
 
-modules = [team0, team1, team2, team3, team4, team5, team7]
+modules = [team0, team1, team2,team7]
 for module in modules:
     reload(module)
     print ('reloaded',module)
